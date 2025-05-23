@@ -7,19 +7,29 @@
 
 body{
     background-color: #222 !important;
-    color: wheat !important;
+    color: white;
     font-family: system-ui !important;
 
 }
+.p{
+  padding-bottom: 40px;
+   color: wheat !important;
+}
+
+h1{
+  padding-top: 40px;
+   color: wheat !important;
+}
+
 
 .crud{
+  padding: 50px 0px;
     width: 80%;
     margin: auto;
 }
 
 .head{
     text-align: center;
-    padding-top: 20px;
 }
 
 
@@ -166,8 +176,13 @@ th,td{
 
 .crud{
    width: 100%;
+   padding: 30px  30px;
 }
 
+}
+
+.outputs button{
+  margin: 3px;
 }
 
 @media (max-width: 500px) {
