@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <html lang="en" dir="ltr">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+   
+
+
+
+
+
+
+    <body>      
+ <section class="crud">
+      <div class="head">
+                   <h1 id="hello">CRUDS</h1>
+                   <p class="text-danger">PRODUCT MANAGEMENT SYSTEM</p> 
+                </div>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------BEGIN INPUT SECTION ------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+                <section  class="input">
+                    <input placeholder="title" type="text" id="title" >
+                    <div class="price">
+                        <input onkeyup="getTotal()" placeholder="price" type="price" id="price">
+                        <input onkeyup="getTotal()" placeholder="taxes" type="taxes" id="taxes" >
+                        <input onkeyup="getTotal()" placeholder="ads" type="ads" id="ads" >
+                        <input onkeyup="getTotal()" placeholder="discount" type="discount" id="discount" >
+                        <small id="total"></small>
+                    </div>
+                    <input placeholder="count" type="text" id="count" >
+                    <input placeholder="category" type="text" id="category" >
+                    <button id="submit">Create</button>
+                </section>
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------END INPUT SECTION ---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------BEGIN OUTPUT SECTION ------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+             <section class="outputs">
+                 <div class="sershBlock">
+                    <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+                    <div class="btnSearch">
+                        <button onclick="getSearchMode(this.id)" id="searchTitle">Search by title</button>
+                        <button onclick="getSearchMode(this.id)" id="searchCategory">search by Category</button>
+                    </div>
+
+                </div>
+             </section>
+               
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------- BEGIN TABLE --------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<div id="deleteAll">
+
+</div>
+
+         <table >
+                    <tr>
+                        <th>id</th>
+                        <th>title</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>ads</th>
+                        <th>discount</th>
+                       <th>total</th>
+                        <th>category</th>
+                        <th class="up">update</th>
+                        <th class="up">delete</th>
+                    </tr>
+
+
+
+                    <tbody id="tbody">
+                                 <tr>
+    <!-- <td data-label="ID">${i+1}</td>
+    <td data-label="Title">${dataPro[i].title}</td>
+    <td data-label="Price">${dataPro[i].price}</td>
+    <td data-label="Taxes">${dataPro[i].taxes}</td>
+    <td data-label="Ads">${dataPro[i].ads}</td>
+    <td data-label="Discount">${dataPro[i].discount}</td>
+    <td data-label="Total">${dataPro[i].total}</td>
+    <td data-label="Category">${dataPro[i].category}</td>
+    <td data-label="Update"><button onclick="updateData(${i})" id="update">update</button></td>
+    <td data-label="Delete"><button onclick="deleteData(${i})" id="delete">delete</button></td>
+  </tr> -->
+                    
+                    </tbody>                                                                                                
+         
+                </table>
+
+
+          
+
+
+
+                
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------- END TABLE --------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------>
+
+              
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------END OUTPUT SECTION -------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------->  
+ </section>
+              
+
+
+ <!-- <script src="./js/popper.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/bootstrap.js"></script> -->
+<script src="assets/js/main.js"></script>
+    </body>
+</html>

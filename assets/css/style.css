@@ -1,0 +1,219 @@
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222 !important;
+    color: wheat !important;
+    font-family: system-ui !important;
+
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+
+.head{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+input{
+    background-color: #111;
+    height: 40px;
+    outline: none;
+    border: none;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #fff;
+
+    
+}
+
+
+
+input:focus{
+    background-color: #000;
+    transform: scale(1.1) !important;
+}
+
+
+
+.price input{
+    width: 20%;
+}
+
+
+
+
+
+
+#total{
+    background-color: rgb(64, 8, 117);
+    padding: 5px 2px ;
+    border-radius: 5px;
+    color: rgb(242, 244, 247);
+}
+
+#total::before{
+    content: 'total: ';
+}
+
+
+
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(12, 94, 216);
+    color: rgb(244, 242, 245);
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+button:hover{
+    background-color: blue;
+    letter-spacing: 2px;
+
+}
+
+
+
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+}
+
+
+
+
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase;
+}
+
+th,td{
+    padding: 5px;
+}
+
+#deleteAll{
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  input, button {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  table {
+    font-size: 12px;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  td, th {
+    padding: 5px;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .searchArea {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.crud{
+   width: 100%;
+}
+
+}
+
+@media (max-width: 500px) {
+  .table th:nth-child(2),
+  .table td:nth-child(2),
+  .table th:nth-child(4),
+  .table td:nth-child(4) {
+    display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    padding: 10px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #333;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #ffcc80;
+  }
+
+  td button {
+    width: 48%;
+    padding: 6px;
+    margin-top: 4px;
+  }
+}
+
+
